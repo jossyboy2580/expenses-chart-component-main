@@ -1,7 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --lightness: 0;
+    /*
+
+    Primary
+    
+    */
+    --soft-red: hsl(10, 79%, 65%);
+    --softer-red: hsl(10, 79%, 70%);
+    --cyan: hsl(186, 34%, 60%);
+    /*
+    
+    Neutrals
+    
+    */
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+    font-size: 18px;
+    font-family: DM Sans;
+    background-color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    width: 375px;
+}
+
+.head-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--soft-red);
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.my-bal {
+    color: var(--very-pale-orange);
+    font-size: .8em;
+    margin-bottom: 5px;
+}
+
+.balance .amount {
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: .05em;
+}
+
+.content {
+    background-color: var(--very-pale-orange);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content-header {
+    font-size: 1.35em;
+    font-weight: 700;
+    color: var(--dark-brown);
+    margin-bottom: 20px;
+}
+
+.chart {
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    gap: .6em;
+    padding-bottom: 20px;
+}
+
+.day {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.day .amount {
+    font-size: .6em;
+    /* font-weight: bold; */
+    display: none;
+    padding: .2em;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    background-color: var(--dark-brown);
+}
+
+.bar {
+    border-radius: 4px;
+    width: 100%;
+    /* height: 100%; */
+    background-color: var(--soft-red);
+}
+
+.bar:hover {
+    background-color: var(--softer-red);
+}
+
+.day-name {
+    font-size: .8em;
+    color: var(--medium-brown);
+    align-self: center;
+}
+
+.foot-section {
+    padding-top: 20px;
+    border-top: 1px solid var(--cream);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.month-total .title {
+    font-size: .8em;
+    color: var(--medium-brown);
+}
+
+.month-total .amount {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.last-month {
+    text-align: right;
+}
+
+.last-month .percent {
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.last-month .detail {
+    font-size: .8em;
+    color: var(--medium-brown);
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 355px;
+    }
+    .chart {
+        height: 280px;
+    }
 }
