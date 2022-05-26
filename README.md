@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-(expenses-chart-component-main\Screenshot 2022-05-26 at 03-15-47 Frontend Mentor Expenses chart component.png)
+(expenses-chart-component-main/Screenshot 2022-05-26 at 03-15-47 Frontend Mentor Expenses chart component.png)
 
 ### Links
 
