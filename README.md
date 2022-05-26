@@ -28,7 +28,7 @@ Users should be able to:
 - **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
 
 ### Screenshot
-![](Screenshot 2022-05-26 at 03-15-47 Frontend Mentor Expenses chart component.png)
+![](screenshot.png)
 
 ### Links
 
